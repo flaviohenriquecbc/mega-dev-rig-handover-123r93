@@ -18,3 +18,4 @@ export type Night = {
 
 // readNight(runsDir, night): Night | null — null when runs/<night>.jsonl does not exist. lastError is the most recent error seen for the job.
 
+export type ReadNight = (runsDir: string, night: string) => Night | null;
